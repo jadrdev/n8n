@@ -22,14 +22,23 @@
    - Render detectará automáticamente el `render.yaml`
    - Click en "Apply"
 
-3. **Configura las variables de entorno**
+3. **Configura Supabase**
+   - Ve a tu proyecto en Supabase
+   - En Settings → Database, copia la cadena de conexión
+   - Obtendrás: host, database, user, password
+
+4. **Configura las variables de entorno en Render**
    Después del despliegue, ve a tu servicio y actualiza:
    - `N8N_HOST`: copia el dominio que te dio Render (ej: `n8n-xxxx.onrender.com`)
    - `WEBHOOK_URL`: `https://tu-dominio.onrender.com/`
    - `N8N_EDITOR_BASE_URL`: `https://tu-dominio.onrender.com`
-   - `N8N_BASIC_AUTH_PASSWORD`: cambia la contraseña generada si quieres
+   - `N8N_BASIC_AUTH_PASSWORD`: cambia la contraseña si quieres
+   - `DB_POSTGRESDB_HOST`: host de Supabase (ej: `db.xxx.supabase.co`)
+   - `DB_POSTGRESDB_DATABASE`: nombre de la base de datos (normalmente `postgres`)
+   - `DB_POSTGRESDB_USER`: usuario de Supabase (normalmente `postgres`)
+   - `DB_POSTGRESDB_PASSWORD`: contraseña de tu base de datos Supabase
 
-4. **Accede a tu n8n**
+5. **Accede a tu n8n**
    - Usa el dominio generado: `https://n8n-xxxx.onrender.com`
    - Usuario: `admin`
    - Contraseña: la que configuraste o la generada automáticamente

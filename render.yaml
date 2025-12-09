@@ -21,3 +21,19 @@ services:
         sync: false
       - key: N8N_EDITOR_BASE_URL
         sync: false
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        sync: false
+      - key: DB_POSTGRESDB_PORT
+        value: 5432
+      - key: DB_POSTGRESDB_DATABASE
+        sync: false
+      - key: DB_POSTGRESDB_USER
+        sync: false
+      - key: DB_POSTGRESDB_PASSWORD
+        sync: false
+      - key: DB_POSTGRESDB_SSL_ENABLED
+        value: true
+      - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
+        value: false
