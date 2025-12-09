@@ -37,3 +37,5 @@ services:
         value: true
       - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
         value: false
+      - key: NODE_OPTIONS
+        value: --dns-result-order=ipv4first
